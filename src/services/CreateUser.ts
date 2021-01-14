@@ -1,8 +1,13 @@
+interface TechObject {
+    title: string;
+    experience: number;
+}
+
 interface CreateUserData {
     name?: string;
     email: string;
     password: string;
-    tech: string[];
+    tech: Array<string | TechObject>;
 }
 
 export default function CreateUserData({name = '', email, password, tech}: CreateUserData){

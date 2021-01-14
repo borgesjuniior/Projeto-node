@@ -12,7 +12,8 @@ function helloWorld(req, res) {
         password: '1234',
         tech: [
             'React',
-            'React Native'
+            'React Native',
+            { title: 'Javascript', experience: 100 }
         ]
     });
     console.log(user.name);

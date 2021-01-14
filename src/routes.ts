@@ -9,7 +9,8 @@ export function helloWorld(req: Request, res: Response) {
         password: '1234',
         tech: [
             'React', 
-            'React Native'
+            'React Native',
+            {title: 'Javascript', experience: 100}
         ]
     });
 
