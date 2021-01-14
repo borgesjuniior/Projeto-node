@@ -1,12 +1,9 @@
 import express from 'express';
+import { helloWorld } from './routes';
 
 const app = express();
 
-app.get('/', (req, res) => {
-
-    return res.json({ Hello: 'Hello word' });
-
-})
+app.get('/', helloWorld) 
 
 app.listen(3333, () => {
     console.log('Server has started!')
